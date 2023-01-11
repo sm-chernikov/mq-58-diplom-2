@@ -82,7 +82,7 @@ body {
     padding: 46px 28px;
     position: relative;
     z-index: 10;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     color: #000;
     
     background: #ffffff;
@@ -252,7 +252,7 @@ body {
     background-size: cover;
     background-position: top center;
 
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -352,7 +352,7 @@ body {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 641px) {
     .header__container {
         max-width: 1170px;
         display: flex;
@@ -361,7 +361,7 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1199px) {
     .header {
         min-height: 391px;
     
@@ -596,7 +596,7 @@ a.post__title_link_trend {
     max-width: 1200px;
     padding: 45px 15px 0 15px;
     margin: 0 auto;
-    font-family: Open Sans, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -606,11 +606,14 @@ a.post__title_link_trend {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    width: 100%;
+  
 }
 
 .post {
     width: 100%;
-    max-width: 392px;
+   
     margin-bottom: 57px;
 }
 
@@ -620,7 +623,7 @@ a.post__title_link_trend {
 
 .picture_photo {
     width: 100%;
-    max-width: 392px;
+    /* max-width: 392px; */
 }
 
 .post__tag_list {
@@ -876,7 +879,7 @@ a.post__title_link_trend {
     bottom: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 641px) {
     .body__container {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -884,6 +887,8 @@ a.post__title_link_trend {
 
     .main__post {
         justify-content: flex-start;
+        width: 100%;
+        margin-right: 35px;
     }
 
     .post__text {
@@ -919,10 +924,15 @@ a.post__title_link_trend {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1199px) {
     .body__container {
-        max-width: 768px;
+        
         padding: 43px 35px 0 35px;
+    }
+
+    .main {
+        width: 100%;
+        margin-right: 35px;
     }
 
     .post {
@@ -1009,11 +1019,19 @@ a.post__title_link_trend {
     margin-bottom: 24px;
 }
 
+.production__img {
+     /* не соображу как контенное изобрадение сделать width - 100% как будто держит высота , но не найду где фиксированная высота picture */
+     
+     /* width: 100%;
+     padding: 0 20px; */
+}
+
 .production__content {
     display: flex;
     flex-direction: column;
 
     width: 100%;
+    height: 100%;
     border: 3px solid #b59f5b;
     padding: 50px 14px 27px 14px;
     margin-top: -35px;
@@ -1174,7 +1192,7 @@ a.post__title_link_trend {
 .copyright{
     margin: 48px 52px 48px 59px;
     
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
