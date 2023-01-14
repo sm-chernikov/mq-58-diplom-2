@@ -1002,7 +1002,7 @@ a.post__title_link_trend {
 /* наши изделия */
 .main__production {
     font-family: inherit;
-    max-width: 698px;
+    /* max-width: 698px; */
     padding: 40px 15px 0 15px;
 }
 
@@ -1017,13 +1017,15 @@ a.post__title_link_trend {
     flex-direction: column;
     align-items: center;
     margin-bottom: 24px;
+    
+}
+.production__img {
+    width: 100%;
 }
 
-.production__img {
-     /* не соображу как контенное изобрадение сделать width - 100% как будто держит высота , но не найду где фиксированная высота picture */
-     
-     /* width: 100%;
-     padding: 0 20px; */
+.production__pic {
+    width: 100%;
+    padding: 0 20px;
 }
 
 .production__content {
@@ -1097,7 +1099,7 @@ a.post__title_link_trend {
     }
 
     .production__card-box {
-        max-width: 698px;
+        /* max-width: 698px; */
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -1110,7 +1112,7 @@ a.post__title_link_trend {
     }
 
     .production__content {
-        max-width: 335px;
+        /* max-width: 335px; */
         min-height: 257px;
         padding: 49px 14px 24px 14px;
     }
